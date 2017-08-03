@@ -18,7 +18,7 @@ PCB design has been produced using KiCAD and is available here.
 Hardware for the enclosure is also provided here.
 
 
-##Pin Connections:
+## Pin Connections:
 
 | Node MCU Conenction | Pin Number     |Function          |
 |---------------------|----------------|------------------|

@@ -19,7 +19,7 @@ Hardware for the enclosure is also provided here.
 
 
 ##Pin Connections:
-|---------------------|----------------|------------------|
+
 | Node MCU Conenction | Pin Number     |Function          |
 |---------------------|----------------|------------------|
 | D0                  | 30             | HC-12 SET pin    |

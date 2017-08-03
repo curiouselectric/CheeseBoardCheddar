@@ -1,0 +1,1032 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:matts_components
+LIBS:ESP_WiFi_Display-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NODEMCU U1
+U 1 1 5946EBE2
+P 3700 6050
+F 0 "U1" H 3650 6150 60  0000 C CNN
+F 1 "NODEMCU" H 3700 5900 60  0000 C CNN
+F 2 "REInnovationFootprint:NodeMCU_Amica_R2_FSILK" H 4000 6050 60  0001 C CNN
+F 3 "" H 4000 6050 60  0000 C CNN
+	1    3700 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L OLED_I2C DISP1
+U 1 1 5946ECA2
+P 9850 1700
+F 0 "DISP1" H 10250 2700 60  0000 C CNN
+F 1 "OLED_I2C" H 10250 1950 60  0000 C CNN
+F 2 "REInnovationFootprint:TH_OLED1306" H 11250 2050 60  0001 C CNN
+F 3 "" H 11250 2050 60  0000 C CNN
+	1    9850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED-RESCUE-MiniPredictionMachine_WIFI_Unit D2
+U 1 1 5946ED8E
+P 7200 1500
+F 0 "D2" H 7200 1600 50  0000 C CNN
+F 1 "A" H 7200 1400 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_LED-5MM_larg_pad" H 7200 1500 50  0001 C CNN
+F 3 "" H 7200 1500 50  0000 C CNN
+	1    7200 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED-RESCUE-MiniPredictionMachine_WIFI_Unit D3
+U 1 1 5946EE43
+P 2500 3300
+F 0 "D3" H 2500 3400 50  0000 C CNN
+F 1 "B" H 2500 3200 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_LED-5MM_larg_pad" H 2500 3300 50  0001 C CNN
+F 3 "" H 2500 3300 50  0000 C CNN
+	1    2500 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW1
+U 1 1 5946EE83
+P 10500 2550
+F 0 "SW1" H 10580 2660 50  0000 C CNN
+F 1 "SWUP" H 10500 2450 50  0000 C CNN
+F 2 "REInnovationFootprint:SW_PUSH_SMALL_lg_pad" H 10500 2750 50  0001 C CNN
+F 3 "" H 10500 2750 50  0000 C CNN
+	1    10500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW2
+U 1 1 5946EED6
+P 10550 3550
+F 0 "SW2" H 10630 3660 50  0000 C CNN
+F 1 "SWDOWN" H 10550 3450 50  0000 C CNN
+F 2 "REInnovationFootprint:SW_PUSH_SMALL_lg_pad" H 10550 3750 50  0001 C CNN
+F 3 "" H 10550 3750 50  0000 C CNN
+	1    10550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X05 P1
+U 1 1 5946EF1A
+P 8500 5600
+F 0 "P1" H 8500 5900 50  0000 C CNN
+F 1 "SERIAL_HC12" V 8600 5600 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_SIL_5_1mm" H 8500 5600 50  0001 C CNN
+F 3 "" H 8500 5600 50  0000 C CNN
+	1    8500 5600
+	1    0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 5946F4C5
+P 6700 1500
+F 0 "R1" V 6780 1500 50  0000 C CNN
+F 1 "330" V 6700 1500 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" V 6630 1500 50  0001 C CNN
+F 3 "" H 6700 1500 50  0000 C CNN
+	1    6700 1500
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5946F5C8
+P 2000 3300
+F 0 "R2" V 2080 3300 50  0000 C CNN
+F 1 "330" V 2000 3300 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" V 1930 3300 50  0001 C CNN
+F 3 "" H 2000 3300 50  0000 C CNN
+	1    2000 3300
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5946F620
+P 10200 2300
+F 0 "R4" V 10280 2300 50  0000 C CNN
+F 1 "10k" V 10200 2300 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" V 10130 2300 50  0001 C CNN
+F 3 "" H 10200 2300 50  0000 C CNN
+	1    10200 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 5946F71C
+P 10200 3300
+F 0 "R3" V 10280 3300 50  0000 C CNN
+F 1 "10k" V 10200 3300 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" V 10130 3300 50  0001 C CNN
+F 3 "" H 10200 3300 50  0000 C CNN
+	1    10200 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5946FF27
+P 9250 1400
+F 0 "#PWR01" H 9250 1150 50  0001 C CNN
+F 1 "GND" H 9250 1250 50  0000 C CNN
+F 2 "" H 9250 1400 50  0000 C CNN
+F 3 "" H 9250 1400 50  0000 C CNN
+	1    9250 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 5946FF6D
+P 8800 1200
+F 0 "#PWR02" H 8800 1050 50  0001 C CNN
+F 1 "+3.3V" H 8800 1340 50  0000 C CNN
+F 2 "" H 8800 1200 50  0000 C CNN
+F 3 "" H 8800 1200 50  0000 C CNN
+	1    8800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 59470592
+P 4200 4100
+F 0 "#PWR03" H 4200 3850 50  0001 C CNN
+F 1 "GND" H 4200 3950 50  0000 C CNN
+F 2 "" H 4200 4100 50  0000 C CNN
+F 3 "" H 4200 4100 50  0000 C CNN
+	1    4200 4100
+	1    0    0    -1  
+$EndComp
+Text HLabel 1200 3950 0    60   Input ~ 0
+LED_WS2811
+$Comp
+L GND #PWR04
+U 1 1 5947099A
+P 7550 1500
+F 0 "#PWR04" H 7550 1250 50  0001 C CNN
+F 1 "GND" H 7550 1350 50  0000 C CNN
+F 2 "" H 7550 1500 50  0000 C CNN
+F 3 "" H 7550 1500 50  0000 C CNN
+	1    7550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 594709E4
+P 2850 3300
+F 0 "#PWR05" H 2850 3050 50  0001 C CNN
+F 1 "GND" H 2850 3150 50  0000 C CNN
+F 2 "" H 2850 3300 50  0000 C CNN
+F 3 "" H 2850 3300 50  0000 C CNN
+	1    2850 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3300 4300
+Wire Wire Line
+	3100 4100 3300 4100
+Wire Wire Line
+	3900 4100 4200 4100
+Wire Wire Line
+	7400 1500 7550 1500
+Wire Wire Line
+	2700 3300 2850 3300
+Wire Wire Line
+	2300 3300 2150 3300
+Wire Wire Line
+	7000 1500 6850 1500
+Text HLabel 6350 1500 0    60   Input ~ 0
+LED_A
+Wire Wire Line
+	6350 1500 6550 1500
+Wire Wire Line
+	1650 3300 1850 3300
+Text HLabel 5350 6350 2    60   Input ~ 0
+LED_WS2811
+Text HLabel 5350 6500 2    60   Input ~ 0
+LED_A
+Text HLabel 5350 6050 2    60   Input ~ 0
+SDA
+Text HLabel 5350 6200 2    60   Input ~ 0
+SCL
+$Comp
+L +3.3V #PWR06
+U 1 1 594718A7
+P 7900 5350
+F 0 "#PWR06" H 7900 5200 50  0001 C CNN
+F 1 "+3.3V" H 7900 5490 50  0000 C CNN
+F 2 "" H 7900 5350 50  0000 C CNN
+F 3 "" H 7900 5350 50  0000 C CNN
+	1    7900 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5947199F
+P 7800 5500
+F 0 "#PWR07" H 7800 5250 50  0001 C CNN
+F 1 "GND" H 7800 5350 50  0000 C CNN
+F 2 "" H 7800 5500 50  0000 C CNN
+F 3 "" H 7800 5500 50  0000 C CNN
+	1    7800 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 59471AB1
+P 10950 3550
+F 0 "#PWR08" H 10950 3300 50  0001 C CNN
+F 1 "GND" H 10950 3400 50  0000 C CNN
+F 2 "" H 10950 3550 50  0000 C CNN
+F 3 "" H 10950 3550 50  0000 C CNN
+	1    10950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 59471AFB
+P 10900 2550
+F 0 "#PWR09" H 10900 2300 50  0001 C CNN
+F 1 "GND" H 10900 2400 50  0000 C CNN
+F 2 "" H 10900 2550 50  0000 C CNN
+F 3 "" H 10900 2550 50  0000 C CNN
+	1    10900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR010
+U 1 1 59471B45
+P 10200 2050
+F 0 "#PWR010" H 10200 1900 50  0001 C CNN
+F 1 "+3.3V" H 10200 2190 50  0000 C CNN
+F 2 "" H 10200 2050 50  0000 C CNN
+F 3 "" H 10200 2050 50  0000 C CNN
+	1    10200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR011
+U 1 1 59471B8F
+P 10200 3050
+F 0 "#PWR011" H 10200 2900 50  0001 C CNN
+F 1 "+3.3V" H 10200 3190 50  0000 C CNN
+F 2 "" H 10200 3050 50  0000 C CNN
+F 3 "" H 10200 3050 50  0000 C CNN
+	1    10200 3050
+	1    0    0    -1  
+$EndComp
+Text HLabel 9750 2550 0    60   Input ~ 0
+SW_UP
+Text HLabel 9850 3550 0    60   Input ~ 0
+SW_DOWN
+Wire Wire Line
+	10650 2550 10900 2550
+Wire Wire Line
+	10350 2550 9750 2550
+Wire Wire Line
+	10200 2450 10200 2550
+Connection ~ 10200 2550
+Wire Wire Line
+	10200 2150 10200 2050
+Wire Wire Line
+	9850 3550 10400 3550
+Wire Wire Line
+	10200 3450 10200 3550
+Connection ~ 10200 3550
+Wire Wire Line
+	10200 3150 10200 3050
+Wire Wire Line
+	10700 3550 10950 3550
+Text HLabel 5350 5650 2    60   Input ~ 0
+SW_DOWN
+Text HLabel 5350 5050 2    60   Input ~ 0
+SW_UP
+Text HLabel 9200 1000 0    60   Input ~ 0
+SDA
+Text HLabel 9200 1100 0    60   Input ~ 0
+SCL
+Text HLabel 5350 5500 2    60   Input ~ 0
+SOFT_Tx
+Text HLabel 5350 5350 2    60   Input ~ 0
+SOFT_Rx
+Wire Wire Line
+	9500 1200 8800 1200
+Wire Wire Line
+	9250 1400 9250 1300
+Wire Wire Line
+	9250 1300 9500 1300
+Wire Wire Line
+	9200 1100 9500 1100
+Wire Wire Line
+	9200 1000 9500 1000
+Wire Wire Line
+	8300 5500 7800 5500
+Wire Wire Line
+	7900 5350 7900 5400
+Wire Wire Line
+	7900 5400 8300 5400
+$Comp
+L WS2811_EpiStar_8mm D1
+U 1 1 594735D8
+P 3600 4200
+F 0 "D1" H 3600 4425 50  0000 C CNN
+F 1 "WS2811_EpiStar_8mm" H 3600 3950 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_WS2811_LED_8mm" H 3600 4200 50  0001 C CNN
+F 3 "" H 3600 4200 50  0000 C CNN
+	1    3600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 5600 8300 5600
+Wire Wire Line
+	7950 5700 8300 5700
+$Comp
+L GND #PWR012
+U 1 1 59474DF6
+P 1350 6750
+F 0 "#PWR012" H 1350 6500 50  0001 C CNN
+F 1 "GND" H 1350 6600 50  0000 C CNN
+F 2 "" H 1350 6750 50  0000 C CNN
+F 3 "" H 1350 6750 50  0000 C CNN
+	1    1350 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 6700 2350 6700
+Wire Wire Line
+	1350 6700 1350 6750
+$Comp
+L GND #PWR013
+U 1 1 59474F48
+P 5750 6900
+F 0 "#PWR013" H 5750 6650 50  0001 C CNN
+F 1 "GND" H 5750 6750 50  0000 C CNN
+F 2 "" H 5750 6900 50  0000 C CNN
+F 3 "" H 5750 6900 50  0000 C CNN
+	1    5750 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 59474FD4
+P 5800 5900
+F 0 "#PWR014" H 5800 5650 50  0001 C CNN
+F 1 "GND" H 5800 5750 50  0000 C CNN
+F 2 "" H 5800 5900 50  0000 C CNN
+F 3 "" H 5800 5900 50  0000 C CNN
+	1    5800 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 59475061
+P 1200 6300
+F 0 "#PWR015" H 1200 6050 50  0001 C CNN
+F 1 "GND" H 1200 6150 50  0000 C CNN
+F 2 "" H 1200 6300 50  0000 C CNN
+F 3 "" H 1200 6300 50  0000 C CNN
+	1    1200 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 6300 2450 6300
+$Comp
+L +3.3V #PWR016
+U 1 1 59475200
+P 800 6500
+F 0 "#PWR016" H 800 6350 50  0001 C CNN
+F 1 "+3.3V" H 800 6640 50  0000 C CNN
+F 2 "" H 800 6500 50  0000 C CNN
+F 3 "" H 800 6500 50  0000 C CNN
+	1    800  6500
+	1    0    0    -1  
+$EndComp
+Text HLabel 7850 5750 0    60   Input ~ 0
+SOFT_Tx
+Text HLabel 7850 5850 0    60   Input ~ 0
+SOFT_Rx
+Wire Wire Line
+	7850 5750 7900 5750
+Wire Wire Line
+	7900 5750 7900 5600
+Wire Wire Line
+	7950 5700 7950 5850
+Wire Wire Line
+	7950 5850 7850 5850
+Text HLabel 7850 6000 0    60   Input ~ 0
+HC12_SET
+Wire Wire Line
+	7850 6000 8100 6000
+Wire Wire Line
+	8100 6000 8100 5800
+Wire Wire Line
+	8100 5800 8300 5800
+Text HLabel 5350 5200 2    60   Input ~ 0
+HC12_SET
+$Comp
+L SPST SW3
+U 1 1 5949F501
+P 4100 1000
+F 0 "SW3" H 4100 1100 50  0000 C CNN
+F 1 "ON/OFF" H 4100 900 50  0000 C CNN
+F 2 "REInnovationFootprint:SW_SPDT_R_Angle_ALIEX" H 4100 1000 50  0001 C CNN
+F 3 "" H 4100 1000 50  0000 C CNN
+	1    4100 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L FUSE F1
+U 1 1 5949F512
+P 3200 1000
+F 0 "F1" H 3300 1050 50  0000 C CNN
+F 1 "500mA" H 3000 950 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_MC36188_FUSE" H 3200 1000 50  0001 C CNN
+F 3 "" H 3200 1000 50  0000 C CNN
+F 4 "~" H 3200 1000 60  0000 C CNN "Notes"
+F 5 "Resettable fuse. 0.5A" H 3200 1000 60  0001 C CNN "Description"
+F 6 "~" H 3200 1000 60  0001 C CNN "Manufacturer"
+F 7 "~" H 3200 1000 60  0001 C CNN "Manufacturer Part No"
+F 8 "RS" H 3200 1000 60  0001 C CNN "Supplier 1"
+F 9 "517-6635" H 3200 1000 60  0001 C CNN "Supplier 1 Part No"
+F 10 "0.27" H 3200 1000 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 3200 1000 60  0001 C CNN "Supplier 2"
+F 12 "~" H 3200 1000 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 3200 1000 60  0001 C CNN "Supplier 2 Cost"
+	1    3200 1000
+	1    0    0    -1  
+$EndComp
+Text HLabel 5350 6800 2    60   Input ~ 0
+Tx
+Text HLabel 5350 6650 2    60   Input ~ 0
+Rx
+Wire Wire Line
+	800  6500 1400 6500
+Wire Wire Line
+	1400 6500 1400 6400
+Wire Wire Line
+	1400 6400 2450 6400
+Text Notes 850  1600 0    60   ~ 0
+USB input USB-B_1
+$Comp
+L USB_B-RESCUE-MiniPredictionMachine_WIFI_Unit P2
+U 1 1 594A0CF0
+P 1200 1200
+F 0 "P2" H 1400 1000 50  0000 C CNN
+F 1 "USB" H 1150 1400 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_USB_B_lg_pad" V 1150 1100 50  0001 C CNN
+F 3 "" V 1150 1100 50  0000 C CNN
+	1    1200 1200
+	0    -1   -1   0   
+$EndComp
+Text HLabel 1400 7100 0    60   Input ~ 0
+5V_PWR
+Text HLabel 4750 1000 2    60   Output ~ 0
+5V_PWR
+$Comp
+L GND #PWR018
+U 1 1 594A2231
+P 1900 1150
+F 0 "#PWR018" H 1900 900 50  0001 C CNN
+F 1 "GND" H 1900 1000 50  0000 C CNN
+F 2 "" H 1900 1150 50  0000 C CNN
+F 3 "" H 1900 1150 50  0000 C CNN
+	1    1900 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1000 3600 1000
+Wire Wire Line
+	4600 1000 4750 1000
+Wire Wire Line
+	1100 900  1600 900 
+Wire Wire Line
+	1600 900  1600 1100
+Wire Wire Line
+	1600 1100 1500 1100
+Wire Wire Line
+	1600 1000 1900 1000
+Wire Wire Line
+	1900 1000 1900 1150
+Connection ~ 1600 1000
+Wire Wire Line
+	1500 1400 2250 1400
+Wire Wire Line
+	2250 1400 2250 1000
+Wire Wire Line
+	2250 1000 2450 1000
+Wire Wire Line
+	1400 7100 1550 7100
+Wire Wire Line
+	1550 7100 1550 6800
+Wire Wire Line
+	1550 6800 2350 6800
+$Comp
+L +3.3V #PWR020
+U 1 1 594A3A2E
+P 5200 7100
+F 0 "#PWR020" H 5200 6950 50  0001 C CNN
+F 1 "+3.3V" H 5200 7240 50  0000 C CNN
+F 2 "" H 5200 7100 50  0000 C CNN
+F 3 "" H 5200 7100 50  0000 C CNN
+	1    5200 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR021
+U 1 1 594A3AEB
+P 6050 5800
+F 0 "#PWR021" H 6050 5650 50  0001 C CNN
+F 1 "+3.3V" H 6050 5940 50  0000 C CNN
+F 2 "" H 6050 5800 50  0000 C CNN
+F 3 "" H 6050 5800 50  0000 C CNN
+	1    6050 5800
+	1    0    0    -1  
+$EndComp
+Text Notes 2700 7500 0    60   ~ 0
+800mA 3.3V regulator on NodeMCU
+Text HLabel 4200 4450 2    60   Input ~ 0
+5V_PWR
+Wire Wire Line
+	4200 4450 4100 4450
+Wire Wire Line
+	4100 4450 4100 4300
+Wire Wire Line
+	4100 4300 3900 4300
+$Comp
+L CONN_01X15 P4
+U 1 1 5942DB22
+P 5000 6050
+F 0 "P4" H 5000 6850 50  0000 C CNN
+F 1 "NODEMCU_2" V 5100 6050 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_SIL-15" H 5000 6050 50  0001 C CNN
+F 3 "" H 5000 6050 50  0000 C CNN
+	1    5000 6050
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_01X15 P3
+U 1 1 5942DF79
+P 2050 6100
+F 0 "P3" H 2050 6900 50  0000 C CNN
+F 1 "NODEMCU_1" V 2150 6100 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_SIL-15" H 2050 6100 50  0001 C CNN
+F 3 "" H 2050 6100 50  0000 C CNN
+	1    2050 6100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5350 4800 5050
+Wire Wire Line
+	4400 5050 5350 5050
+Wire Wire Line
+	4800 5450 4750 5450
+Wire Wire Line
+	4750 5450 4750 5200
+Wire Wire Line
+	4400 5200 5350 5200
+Wire Wire Line
+	4800 5550 4700 5550
+Wire Wire Line
+	4700 5550 4700 5350
+Wire Wire Line
+	4400 5350 5350 5350
+Wire Wire Line
+	4800 5650 4650 5650
+Wire Wire Line
+	4650 5650 4650 5500
+Wire Wire Line
+	4400 5500 5350 5500
+Wire Wire Line
+	4800 5750 4600 5750
+Wire Wire Line
+	4600 5750 4600 5650
+Wire Wire Line
+	4400 5650 5350 5650
+Wire Wire Line
+	4800 5850 4550 5850
+Wire Wire Line
+	4550 5850 4550 5800
+Wire Wire Line
+	4400 5800 6050 5800
+Wire Wire Line
+	4800 5950 4400 5950
+Wire Wire Line
+	4500 6050 4500 6100
+Wire Wire Line
+	4500 6100 4400 6100
+Wire Wire Line
+	4800 6150 4450 6150
+Wire Wire Line
+	4450 6150 4450 6250
+Wire Wire Line
+	4450 6250 4400 6250
+Wire Wire Line
+	4800 6250 4500 6250
+Wire Wire Line
+	4500 6250 4500 6400
+Wire Wire Line
+	4500 6400 4400 6400
+Wire Wire Line
+	4800 6350 4550 6350
+Wire Wire Line
+	4550 6350 4550 6550
+Wire Wire Line
+	4550 6550 4400 6550
+Wire Wire Line
+	4800 6450 4600 6450
+Wire Wire Line
+	4600 6450 4600 6700
+Wire Wire Line
+	4600 6700 4400 6700
+Wire Wire Line
+	4800 6550 4650 6550
+Wire Wire Line
+	4650 6550 4650 6850
+Wire Wire Line
+	4650 6850 4400 6850
+Wire Wire Line
+	4800 6650 4700 6650
+Wire Wire Line
+	4700 6650 4700 7000
+Wire Wire Line
+	4700 7000 4400 7000
+Wire Wire Line
+	4800 6750 4750 6750
+Wire Wire Line
+	4750 6750 4750 7150
+Wire Wire Line
+	4400 7150 5200 7150
+Wire Wire Line
+	2250 5400 2250 5050
+Wire Wire Line
+	2250 5050 2800 5050
+Wire Wire Line
+	2250 5500 2300 5500
+Wire Wire Line
+	2300 5500 2300 5200
+Wire Wire Line
+	2300 5200 2800 5200
+Wire Wire Line
+	2250 5600 2350 5600
+Wire Wire Line
+	2350 5600 2350 5350
+Wire Wire Line
+	2350 5350 2800 5350
+Wire Wire Line
+	2250 5700 2400 5700
+Wire Wire Line
+	2400 5700 2400 5500
+Wire Wire Line
+	2400 5500 2800 5500
+Wire Wire Line
+	2250 5800 2450 5800
+Wire Wire Line
+	2450 5800 2450 5650
+Wire Wire Line
+	2450 5650 2800 5650
+Wire Wire Line
+	2250 5900 2500 5900
+Wire Wire Line
+	2500 5900 2500 5800
+Wire Wire Line
+	2500 5800 2800 5800
+Wire Wire Line
+	2250 6000 2550 6000
+Wire Wire Line
+	2550 6000 2550 5950
+Wire Wire Line
+	2550 5950 2800 5950
+Wire Wire Line
+	2250 6100 2800 6100
+Wire Wire Line
+	2250 6200 2800 6200
+Wire Wire Line
+	2800 6200 2800 6250
+Wire Wire Line
+	2250 6300 2750 6300
+Wire Wire Line
+	2750 6300 2750 6400
+Wire Wire Line
+	2750 6400 2800 6400
+Wire Wire Line
+	2250 6400 2700 6400
+Wire Wire Line
+	2700 6400 2700 6550
+Wire Wire Line
+	2700 6550 2800 6550
+Wire Wire Line
+	2250 6500 2650 6500
+Wire Wire Line
+	2650 6500 2650 6700
+Wire Wire Line
+	2650 6700 2800 6700
+Wire Wire Line
+	2250 6600 2600 6600
+Wire Wire Line
+	2600 6600 2600 6850
+Wire Wire Line
+	2600 6850 2800 6850
+Wire Wire Line
+	2250 6700 2550 6700
+Wire Wire Line
+	2550 6700 2550 7000
+Wire Wire Line
+	2550 7000 2800 7000
+Wire Wire Line
+	2250 6800 2500 6800
+Wire Wire Line
+	2500 6800 2500 7150
+Wire Wire Line
+	2500 7150 2800 7150
+Connection ~ 4800 5050
+Connection ~ 4750 5200
+Connection ~ 4700 5350
+Connection ~ 4650 5500
+Connection ~ 4600 5650
+Connection ~ 4550 5800
+Wire Wire Line
+	5800 5900 4550 5900
+Wire Wire Line
+	4550 5900 4550 5950
+Connection ~ 4550 5950
+Wire Wire Line
+	4500 6050 4800 6050
+Wire Wire Line
+	5350 6050 4700 6050
+Connection ~ 4700 6050
+Wire Wire Line
+	5350 6200 4700 6200
+Wire Wire Line
+	4700 6200 4700 6150
+Connection ~ 4700 6150
+Wire Wire Line
+	5350 6350 5250 6350
+Wire Wire Line
+	5250 6350 5250 6250
+Wire Wire Line
+	5250 6250 4650 6250
+Connection ~ 4650 6250
+Wire Wire Line
+	5350 6500 5200 6500
+Wire Wire Line
+	5200 6500 5200 6350
+Wire Wire Line
+	5200 6350 4700 6350
+Connection ~ 4700 6350
+Wire Wire Line
+	5350 6650 5150 6650
+Wire Wire Line
+	5150 6650 5150 6450
+Wire Wire Line
+	5150 6450 4700 6450
+Connection ~ 4700 6450
+Wire Wire Line
+	5350 6800 5100 6800
+Wire Wire Line
+	5100 6800 5100 6550
+Wire Wire Line
+	5100 6550 4700 6550
+Connection ~ 4700 6550
+Wire Wire Line
+	4700 6900 5750 6900
+Connection ~ 4700 6900
+Wire Wire Line
+	5200 7150 5200 7100
+Connection ~ 4750 7150
+Connection ~ 2350 6700
+Connection ~ 2350 6800
+Connection ~ 2450 6400
+Connection ~ 2450 6300
+$Comp
+L 74LVC1G17 U3
+U 1 1 594323EE
+P 2650 4050
+F 0 "U3" H 2650 4500 60  0000 C CNN
+F 1 "74LVC1G17" H 2550 3750 60  0000 C CNN
+F 2 "REInnovationFootprint:SM_SOT-23-5" H 2650 4050 60  0001 C CNN
+F 3 "http://docs-europe.electrocomponents.com/webdocs/154d/0900766b8154d6d1.pdf" H 2650 4050 60  0001 C CNN
+F 4 "~" H 2650 4050 60  0001 C CNN "Description"
+F 5 "~" H 2650 4050 60  0001 C CNN "Notes"
+F 6 "~" H 2650 4050 60  0001 C CNN "Manufacturer"
+F 7 "~" H 2650 4050 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 2650 4050 60  0001 C CNN "Supplier 1"
+F 9 "~" H 2650 4050 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 2650 4050 60  0001 C CNN "Supplier 2"
+F 11 "~" H 2650 4050 60  0001 C CNN "Supplier 2 Part No"
+F 12 "~" H 2650 4050 60  0001 C CNN "Cost"
+	1    2650 4050
+	1    0    0    -1  
+$EndComp
+Text HLabel 3200 3650 1    60   Input ~ 0
+5V_PWR
+Wire Wire Line
+	3100 3800 3200 3800
+Wire Wire Line
+	3200 3800 3200 3650
+$Comp
+L GND #PWR022
+U 1 1 5947F807
+P 1850 4150
+F 0 "#PWR022" H 1850 3900 50  0001 C CNN
+F 1 "GND" H 1850 4000 50  0000 C CNN
+F 2 "" H 1850 4150 50  0000 C CNN
+F 3 "" H 1850 4150 50  0000 C CNN
+	1    1850 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3950 1200 3950
+Wire Wire Line
+	1650 3300 1650 3950
+Connection ~ 1650 3950
+Wire Wire Line
+	1850 4150 1850 4100
+Wire Wire Line
+	1850 4100 2050 4100
+NoConn ~ 2050 3800
+Text HLabel 3100 2950 0    60   Input ~ 0
+5V_PWR
+$Comp
+L GND #PWR023
+U 1 1 5948051F
+P 3500 3450
+F 0 "#PWR023" H 3500 3200 50  0001 C CNN
+F 1 "GND" H 3500 3300 50  0000 C CNN
+F 2 "" H 3500 3450 50  0000 C CNN
+F 3 "" H 3500 3450 50  0000 C CNN
+	1    3500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P5
+U 1 1 594805F8
+P 3300 2750
+F 0 "P5" H 3300 2900 50  0000 C CNN
+F 1 "LOCAL 5V?" V 3400 2750 50  0000 C CNN
+F 2 "matts_components:SIL-2_solder_connect" H 3300 2750 50  0001 C CNN
+F 3 "" H 3300 2750 50  0000 C CNN
+	1    3300 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X04 P6
+U 1 1 59480712
+P 3850 3100
+F 0 "P6" H 3850 3350 50  0000 C CNN
+F 1 "WS2812 LED" V 3950 3100 50  0000 C CNN
+F 2 "matts_components:SIL-4_screw_terminals" H 3850 3100 50  0001 C CNN
+F 3 "" H 3850 3100 50  0000 C CNN
+	1    3850 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2950 3250 2950
+Wire Wire Line
+	3350 2950 3350 3050
+Wire Wire Line
+	3350 3050 3650 3050
+Wire Wire Line
+	3650 2950 3550 2950
+Wire Wire Line
+	3550 2950 3550 3050
+Connection ~ 3550 3050
+Wire Wire Line
+	3650 3250 3500 3250
+Wire Wire Line
+	3500 3250 3500 3450
+Wire Wire Line
+	3200 4100 3200 3950
+Wire Wire Line
+	3200 3950 3350 3950
+Wire Wire Line
+	3350 3950 3350 3150
+Wire Wire Line
+	3350 3150 3650 3150
+Connection ~ 3200 4100
+$Comp
+L CONN_01X01 P7
+U 1 1 5948123B
+P 6550 6550
+F 0 "P7" H 6550 6650 50  0000 C CNN
+F 1 "PCB" V 6650 6550 50  0000 C CNN
+F 2 "REInnovationFootprint:PCB_50x100mm_RJWIFI" H 6550 6550 50  0001 C CNN
+F 3 "" H 6550 6550 50  0000 C CNN
+	1    6550 6550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6350 6550
+$Comp
+L CONN_01X01 P8
+U 1 1 594829A2
+P 6550 6850
+F 0 "P8" H 6550 6950 50  0000 C CNN
+F 1 "LOGO1" V 6650 6850 50  0000 C CNN
+F 2 "CuriousElectric3:CEC_Globe_10mm_FCU" H 6550 6850 50  0001 C CNN
+F 3 "" H 6550 6850 50  0000 C CNN
+	1    6550 6850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6350 6850
+$Comp
+L CONN_01X01 P9
+U 1 1 594829F2
+P 6550 7150
+F 0 "P9" H 6550 7250 50  0000 C CNN
+F 1 "LOGO2" V 6650 7150 50  0000 C CNN
+F 2 "CuriousElectric3:TCEC_Words_13mm" H 6550 7150 50  0001 C CNN
+F 3 "" H 6550 7150 50  0000 C CNN
+	1    6550 7150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6350 7150
+$Comp
+L D_Schottky D5
+U 1 1 594A1710
+P 2600 1000
+F 0 "D5" H 2600 1100 50  0000 C CNN
+F 1 "D_Schottky" H 2600 900 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Diode_1" H 2600 1000 50  0001 C CNN
+F 3 "" H 2600 1000 50  0000 C CNN
+	1    2600 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 1000 2950 1000
+Text Notes 850  2400 0    60   ~ 0
+USB input USB-B_2\n
+$Comp
+L USB_B-RESCUE-MiniPredictionMachine_WIFI_Unit P?
+U 1 1 59832FBC
+P 1200 2000
+F 0 "P?" H 1400 1800 50  0000 C CNN
+F 1 "USB" H 1150 2200 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_USB_B_lg_pad" V 1150 1900 50  0001 C CNN
+F 3 "" V 1150 1900 50  0000 C CNN
+	1    1200 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59832FC2
+P 1900 1950
+F 0 "#PWR?" H 1900 1700 50  0001 C CNN
+F 1 "GND" H 1900 1800 50  0000 C CNN
+F 2 "" H 1900 1950 50  0000 C CNN
+F 3 "" H 1900 1950 50  0000 C CNN
+	1    1900 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1700 1600 1700
+Wire Wire Line
+	1600 1700 1600 1900
+Wire Wire Line
+	1600 1900 1500 1900
+Wire Wire Line
+	1600 1800 1900 1800
+Wire Wire Line
+	1900 1800 1900 1950
+Connection ~ 1600 1800
+Wire Wire Line
+	1500 2200 2250 2200
+$EndSCHEMATC

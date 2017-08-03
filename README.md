@@ -23,15 +23,16 @@ Hardware for the enclosure is also provided here.
 | Node MCU Conenction | Pin Number     |Function          |
 |---------------------|----------------|------------------|
 | D0                  | 30             | HC-12 SET pin    |
-| D1                  | 29             | HC-12 SET pin    |
-| D2                  | 28             | HC-12 SET pin    |
-| D3                  | 27             | HC-12 SET pin    |
-| D4                  | 26             | HC-12 SET pin    |
-| D5                  | 23             | HC-12 SET pin    |
-| D6                  | 22             | HC-12 SET pin    |
-| D7                  | 21             | HC-12 SET pin    |
-| D8                  | 20             | HC-12 SET pin    |
-| D9                  | 19             | HC-12 SET pin    |
+| D1                  | 29             | Enocder B        |
+| D2                  | 28             | Soft Serial Rx   |
+| D3                  | 27             | Soft Serial Tx   |
+| D4                  | 26             | Enocder A        |
+| D5                  | 23             | I2C SDA          |
+| D6                  | 22             | I2C SCLK         |
+| D7                  | 21             | LED WS2812       |
+| D8                  | 20             | Encoder Switch   |
+| D9                  | 19             | H/W Serial Rx    |
+| D9                  | 19             | H/W Serial Tx    |
 | A0                  | 1              | HC-12 SET pin    |
 
 

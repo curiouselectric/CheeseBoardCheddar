@@ -51,7 +51,17 @@ P 3700 5900
 F 0 "U1" H 3650 6000 60  0000 C CNN
 F 1 "NODEMCU" H 3700 5750 60  0000 C CNN
 F 2 "REInnovationFootprint:NodeMCU_Amica_R2_FSILK" H 4000 5900 60  0001 C CNN
-F 3 "" H 4000 5900 60  0000 C CNN
+F 3 "https://nodemcu.readthedocs.io/en/master/en/" H 4000 5900 60  0001 C CNN
+F 4 "~" H 3700 5900 60  0000 C CNN "Notes"
+F 5 "Node MCU Amica version. ESP8266 breakout." H 3700 5900 60  0001 C CNN "Description"
+F 6 "~" H 3700 5900 60  0001 C CNN "Manufacturer"
+F 7 "~" H 3700 5900 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 3700 5900 60  0001 C CNN "Supplier 1"
+F 9 "~" H 3700 5900 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 3700 5900 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 3700 5900 60  0001 C CNN "Supplier 2"
+F 12 "~" H 3700 5900 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 3700 5900 60  0001 C CNN "Supplier 2 Cost"
 	1    3700 5900
 	1    0    0    -1  
 $EndComp
@@ -228,8 +238,18 @@ U 1 1 594735D8
 P 6300 3500
 F 0 "D3" H 6300 3725 50  0000 C CNN
 F 1 "WS2812" H 6300 3250 50  0000 C CNN
-F 2 "REInnovationFootprint:TH_WS2811_LED_8mm" H 6300 3500 50  0001 C CNN
-F 3 "" H 6300 3500 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 6300 3500 50  0001 C CNN
+F 3 "https://www.kitronik.co.uk/pdf/WS2812B-LED-datasheet.pdf" H 6300 3500 50  0001 C CNN
+F 4 "~" H 6300 3500 60  0000 C CNN "Notes"
+F 5 "~" H 6300 3500 60  0001 C CNN "Description"
+F 6 "~" H 6300 3500 60  0001 C CNN "Manufacturer"
+F 7 "~" H 6300 3500 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 6300 3500 60  0001 C CNN "Supplier 1"
+F 9 "~" H 6300 3500 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 6300 3500 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 6300 3500 60  0001 C CNN "Supplier 2"
+F 12 "~" H 6300 3500 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 6300 3500 60  0001 C CNN "Supplier 2 Cost"
 	1    6300 3500
 	1    0    0    -1  
 $EndComp
@@ -363,18 +383,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 6250 2450 6250
 Text Notes 850  1600 0    60   ~ 0
-USB input USB-B_1
-$Comp
-L USB_B-RESCUE-MiniPredictionMachine_WIFI_Unit P1
-U 1 1 594A0CF0
-P 1200 1200
-F 0 "P1" H 1400 1000 50  0000 C CNN
-F 1 "USB" H 1150 1400 50  0000 C CNN
-F 2 "REInnovationFootprint:TH_USB_B_lg_pad" V 1150 1100 50  0001 C CNN
-F 3 "" V 1150 1100 50  0000 C CNN
-	1    1200 1200
-	0    -1   -1   0   
-$EndComp
+Micro USB
 Text HLabel 1400 6950 0    60   Input ~ 0
 5V_PWR
 Text HLabel 4750 1000 2    60   Output ~ 0
@@ -382,12 +391,12 @@ Text HLabel 4750 1000 2    60   Output ~ 0
 $Comp
 L GND #PWR013
 U 1 1 594A2231
-P 1900 1150
-F 0 "#PWR013" H 1900 900 50  0001 C CNN
-F 1 "GND" H 1900 1000 50  0000 C CNN
-F 2 "" H 1900 1150 50  0000 C CNN
-F 3 "" H 1900 1150 50  0000 C CNN
-	1    1900 1150
+P 1550 1000
+F 0 "#PWR013" H 1550 750 50  0001 C CNN
+F 1 "GND" H 1550 850 50  0000 C CNN
+F 2 "" H 1550 1000 50  0000 C CNN
+F 3 "" H 1550 1000 50  0000 C CNN
+	1    1550 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -395,20 +404,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 1000 4750 1000
 Wire Wire Line
-	1100 900  1600 900 
-Wire Wire Line
-	1600 900  1600 1100
-Wire Wire Line
-	1600 1100 1500 1100
-Wire Wire Line
-	1600 1000 1900 1000
-Wire Wire Line
-	1900 1000 1900 1150
-Connection ~ 1600 1000
-Wire Wire Line
-	1500 1400 2250 1400
-Wire Wire Line
-	2250 1000 2250 2200
+	2250 1000 2250 2800
 Wire Wire Line
 	2250 1000 2450 1000
 Wire Wire Line
@@ -794,7 +790,7 @@ $EndComp
 Wire Wire Line
 	2750 1000 2950 1000
 Text Notes 850  2400 0    60   ~ 0
-USB input USB-B_2\n
+USB B\n
 $Comp
 L USB_B-RESCUE-MiniPredictionMachine_WIFI_Unit P2
 U 1 1 59832FBC
@@ -868,8 +864,18 @@ U 1 1 59834F16
 P 7300 3500
 F 0 "D4" H 7300 3725 50  0000 C CNN
 F 1 "WS2812" H 7300 3250 50  0000 C CNN
-F 2 "REInnovationFootprint:TH_WS2811_LED_8mm" H 7300 3500 50  0001 C CNN
-F 3 "" H 7300 3500 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 7300 3500 50  0001 C CNN
+F 3 "https://www.kitronik.co.uk/pdf/WS2812B-LED-datasheet.pdf" H 7300 3500 50  0001 C CNN
+F 4 "~" H 7300 3500 60  0000 C CNN "Notes"
+F 5 "~" H 7300 3500 60  0001 C CNN "Description"
+F 6 "~" H 7300 3500 60  0001 C CNN "Manufacturer"
+F 7 "~" H 7300 3500 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 7300 3500 60  0001 C CNN "Supplier 1"
+F 9 "~" H 7300 3500 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 7300 3500 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 7300 3500 60  0001 C CNN "Supplier 2"
+F 12 "~" H 7300 3500 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 7300 3500 60  0001 C CNN "Supplier 2 Cost"
 	1    7300 3500
 	1    0    0    -1  
 $EndComp
@@ -881,8 +887,18 @@ U 1 1 598356DE
 P 8200 3500
 F 0 "D5" H 8200 3725 50  0000 C CNN
 F 1 "WS2812" H 8200 3250 50  0000 C CNN
-F 2 "REInnovationFootprint:TH_WS2811_LED_8mm" H 8200 3500 50  0001 C CNN
-F 3 "" H 8200 3500 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 8200 3500 50  0001 C CNN
+F 3 "https://www.kitronik.co.uk/pdf/WS2812B-LED-datasheet.pdf" H 8200 3500 50  0001 C CNN
+F 4 "~" H 8200 3500 60  0000 C CNN "Notes"
+F 5 "~" H 8200 3500 60  0001 C CNN "Description"
+F 6 "~" H 8200 3500 60  0001 C CNN "Manufacturer"
+F 7 "~" H 8200 3500 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 8200 3500 60  0001 C CNN "Supplier 1"
+F 9 "~" H 8200 3500 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 8200 3500 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 8200 3500 60  0001 C CNN "Supplier 2"
+F 12 "~" H 8200 3500 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 8200 3500 60  0001 C CNN "Supplier 2 Cost"
 	1    8200 3500
 	1    0    0    -1  
 $EndComp
@@ -892,8 +908,18 @@ U 1 1 59835749
 P 9150 3500
 F 0 "D6" H 9150 3725 50  0000 C CNN
 F 1 "WS2812" H 9150 3250 50  0000 C CNN
-F 2 "REInnovationFootprint:TH_WS2811_LED_8mm" H 9150 3500 50  0001 C CNN
-F 3 "" H 9150 3500 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 9150 3500 50  0001 C CNN
+F 3 "https://www.kitronik.co.uk/pdf/WS2812B-LED-datasheet.pdf" H 9150 3500 50  0001 C CNN
+F 4 "~" H 9150 3500 60  0000 C CNN "Notes"
+F 5 "~" H 9150 3500 60  0001 C CNN "Description"
+F 6 "~" H 9150 3500 60  0001 C CNN "Manufacturer"
+F 7 "~" H 9150 3500 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 9150 3500 60  0001 C CNN "Supplier 1"
+F 9 "~" H 9150 3500 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 9150 3500 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 9150 3500 60  0001 C CNN "Supplier 2"
+F 12 "~" H 9150 3500 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 9150 3500 60  0001 C CNN "Supplier 2 Cost"
 	1    9150 3500
 	1    0    0    -1  
 $EndComp
@@ -903,8 +929,18 @@ U 1 1 598357A7
 P 10050 3500
 F 0 "D7" H 10050 3725 50  0000 C CNN
 F 1 "WS2812" H 10050 3250 50  0000 C CNN
-F 2 "REInnovationFootprint:TH_WS2811_LED_8mm" H 10050 3500 50  0001 C CNN
-F 3 "" H 10050 3500 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 10050 3500 50  0001 C CNN
+F 3 "https://www.kitronik.co.uk/pdf/WS2812B-LED-datasheet.pdf" H 10050 3500 50  0001 C CNN
+F 4 "~" H 10050 3500 60  0000 C CNN "Notes"
+F 5 "~" H 10050 3500 60  0001 C CNN "Description"
+F 6 "~" H 10050 3500 60  0001 C CNN "Manufacturer"
+F 7 "~" H 10050 3500 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 10050 3500 60  0001 C CNN "Supplier 1"
+F 9 "~" H 10050 3500 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 10050 3500 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 10050 3500 60  0001 C CNN "Supplier 2"
+F 12 "~" H 10050 3500 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 10050 3500 60  0001 C CNN "Supplier 2 Cost"
 	1    10050 3500
 	1    0    0    -1  
 $EndComp
@@ -945,8 +981,6 @@ Wire Wire Line
 Wire Wire Line
 	6600 3400 6600 3200
 Wire Wire Line
-	6600 3200 10600 3200
-Wire Wire Line
 	10350 3200 10350 3400
 Wire Wire Line
 	9450 3400 9450 3200
@@ -963,7 +997,7 @@ Connection ~ 10350 3200
 Wire Wire Line
 	6600 3600 6600 4000
 Wire Wire Line
-	6600 4000 10350 4000
+	6600 4000 10400 4000
 Wire Wire Line
 	10350 4000 10350 3600
 Wire Wire Line
@@ -1014,5 +1048,212 @@ Wire Wire Line
 	10250 5500 10050 5500
 Wire Wire Line
 	10050 5500 10050 5450
+$Comp
+L CONN_01X02 P10
+U 1 1 5988473B
+P 1300 2850
+F 0 "P10" H 1300 3000 50  0000 C CNN
+F 1 "5V_EXT" V 1400 2850 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_CONN_2W" H 1300 2850 50  0001 C CNN
+F 3 "" H 1300 2850 50  0000 C CNN
+	1    1300 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 598848EA
+P 1650 2950
+F 0 "#PWR020" H 1650 2700 50  0001 C CNN
+F 1 "GND" H 1650 2800 50  0000 C CNN
+F 2 "" H 1650 2950 50  0000 C CNN
+F 3 "" H 1650 2950 50  0000 C CNN
+	1    1650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2800 1500 2800
+Connection ~ 2250 2200
+Wire Wire Line
+	1500 2900 1650 2900
+Wire Wire Line
+	1650 2900 1650 2950
+$Comp
+L C C1
+U 1 1 59885DA0
+P 6750 2900
+F 0 "C1" H 6775 3000 50  0000 L CNN
+F 1 "100n" H 6775 2800 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 6788 2750 50  0001 C CNN
+F 3 "" H 6750 2900 50  0000 C CNN
+F 4 "~" H 6750 2900 60  0000 C CNN "Notes"
+F 5 "~" H 6750 2900 60  0001 C CNN "Description"
+F 6 "~" H 6750 2900 60  0001 C CNN "Manufacturer"
+F 7 "~" H 6750 2900 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 6750 2900 60  0001 C CNN "Supplier 1"
+F 9 "~" H 6750 2900 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 6750 2900 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 6750 2900 60  0001 C CNN "Supplier 2"
+F 12 "~" H 6750 2900 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 6750 2900 60  0001 C CNN "Supplier 2 Cost"
+	1    6750 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 3050 6750 4000
+Connection ~ 6750 4000
+Wire Wire Line
+	6750 2750 6750 2600
+Wire Wire Line
+	6750 2600 6900 2600
+Wire Wire Line
+	6900 2600 6900 3200
+Connection ~ 6900 3200
+$Comp
+L C C2
+U 1 1 598863AC
+P 7650 2900
+F 0 "C2" H 7675 3000 50  0000 L CNN
+F 1 "100n" H 7675 2800 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 7688 2750 50  0001 C CNN
+F 3 "" H 7650 2900 50  0000 C CNN
+F 4 "~" H 7650 2900 60  0000 C CNN "Notes"
+F 5 "~" H 7650 2900 60  0001 C CNN "Description"
+F 6 "~" H 7650 2900 60  0001 C CNN "Manufacturer"
+F 7 "~" H 7650 2900 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 7650 2900 60  0001 C CNN "Supplier 1"
+F 9 "~" H 7650 2900 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 7650 2900 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 7650 2900 60  0001 C CNN "Supplier 2"
+F 12 "~" H 7650 2900 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 7650 2900 60  0001 C CNN "Supplier 2 Cost"
+	1    7650 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7650 2750 7650 2600
+Wire Wire Line
+	7650 2600 7800 2600
+$Comp
+L C C3
+U 1 1 59886411
+P 8600 2900
+F 0 "C3" H 8625 3000 50  0000 L CNN
+F 1 "100n" H 8625 2800 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 8638 2750 50  0001 C CNN
+F 3 "" H 8600 2900 50  0000 C CNN
+F 4 "~" H 8600 2900 60  0000 C CNN "Notes"
+F 5 "~" H 8600 2900 60  0001 C CNN "Description"
+F 6 "~" H 8600 2900 60  0001 C CNN "Manufacturer"
+F 7 "~" H 8600 2900 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 8600 2900 60  0001 C CNN "Supplier 1"
+F 9 "~" H 8600 2900 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 8600 2900 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 8600 2900 60  0001 C CNN "Supplier 2"
+F 12 "~" H 8600 2900 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 8600 2900 60  0001 C CNN "Supplier 2 Cost"
+	1    8600 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8600 2750 8600 2600
+Wire Wire Line
+	8600 2600 8750 2600
+$Comp
+L C C4
+U 1 1 598864E2
+P 9500 2900
+F 0 "C4" H 9525 3000 50  0000 L CNN
+F 1 "100n" H 9525 2800 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 9538 2750 50  0001 C CNN
+F 3 "" H 9500 2900 50  0000 C CNN
+F 4 "~" H 9500 2900 60  0000 C CNN "Notes"
+F 5 "~" H 9500 2900 60  0001 C CNN "Description"
+F 6 "~" H 9500 2900 60  0001 C CNN "Manufacturer"
+F 7 "~" H 9500 2900 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 9500 2900 60  0001 C CNN "Supplier 1"
+F 9 "~" H 9500 2900 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 9500 2900 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 9500 2900 60  0001 C CNN "Supplier 2"
+F 12 "~" H 9500 2900 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 9500 2900 60  0001 C CNN "Supplier 2 Cost"
+	1    9500 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9500 2750 9500 2600
+Wire Wire Line
+	9500 2600 9650 2600
+$Comp
+L C C5
+U 1 1 59886B15
+P 10400 2900
+F 0 "C5" H 10425 3000 50  0000 L CNN
+F 1 "100n" H 10425 2800 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 10438 2750 50  0001 C CNN
+F 3 "" H 10400 2900 50  0000 C CNN
+F 4 "~" H 10400 2900 60  0000 C CNN "Notes"
+F 5 "~" H 10400 2900 60  0001 C CNN "Description"
+F 6 "~" H 10400 2900 60  0001 C CNN "Manufacturer"
+F 7 "~" H 10400 2900 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 10400 2900 60  0001 C CNN "Supplier 1"
+F 9 "~" H 10400 2900 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 10400 2900 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 10400 2900 60  0001 C CNN "Supplier 2"
+F 12 "~" H 10400 2900 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 10400 2900 60  0001 C CNN "Supplier 2 Cost"
+	1    10400 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10400 2750 10400 2600
+Wire Wire Line
+	10400 2600 10550 2600
+Wire Wire Line
+	10400 4000 10400 3050
+Connection ~ 10350 4000
+Wire Wire Line
+	9500 3050 9500 4000
+Connection ~ 9500 4000
+Wire Wire Line
+	6600 3200 10600 3200
+Wire Wire Line
+	9650 2600 9650 3200
+Connection ~ 9650 3200
+Wire Wire Line
+	8750 2600 8750 3200
+Connection ~ 8750 3200
+Wire Wire Line
+	8600 3050 8600 4000
+Connection ~ 8600 4000
+Wire Wire Line
+	7800 2600 7800 3200
+Connection ~ 7800 3200
+Wire Wire Line
+	7650 3050 7650 4000
+Connection ~ 7650 4000
+Wire Wire Line
+	10550 2600 10550 3200
+Connection ~ 10550 3200
+Text Notes 900  3150 0    60   ~ 0
+External 5V\n
+$Comp
+L USB_Micro P1
+U 1 1 59887C8F
+P 1050 1200
+F 0 "P1" H 1400 950 50  0000 C CNN
+F 1 "USB_Micro" H 1050 1450 50  0000 C CNN
+F 2 "REInnovationFootprint:USB_Micro-B_MOLEX_47642-0001" V 1000 1100 50  0001 C CNN
+F 3 "" V 1000 1100 50  0000 C CNN
+	1    1050 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1350 1000 1550 1000
+NoConn ~ 950  750 
+NoConn ~ 1350 1100
+NoConn ~ 1350 1200
+NoConn ~ 1350 1300
+Wire Wire Line
+	1350 1400 2250 1400
 Connection ~ 2250 1400
 $EndSCHEMATC

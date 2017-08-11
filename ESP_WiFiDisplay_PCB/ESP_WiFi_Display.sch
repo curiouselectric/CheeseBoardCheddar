@@ -1125,7 +1125,7 @@ U 1 1 598AD73D
 P 6700 5800
 F 0 "P8" H 6700 5900 50  0000 C CNN
 F 1 "LOGO_MOUSE" V 6800 5800 50  0000 C CNN
-F 2 "CuriousElectric3:CEC_Globe_10mm_FCU" H 6700 5800 50  0001 C CNN
+F 2 "CuriousElectric3:mouse10x10" H 6700 5800 50  0001 C CNN
 F 3 "" H 6700 5800 50  0000 C CNN
 	1    6700 5800
 	1    0    0    -1  
@@ -1144,7 +1144,7 @@ F 5 "WS2812B SMD 50_50" H 6300 3500 60  0001 C CNN "Description"
 F 6 "~" H 6300 3500 60  0001 C CNN "Manufacturer"
 F 7 "~" H 6300 3500 60  0001 C CNN "Manufacturer Part No"
 F 8 "AliExpress" H 6300 3500 60  0001 C CNN "Supplier 1"
-F 9 "https://www.aliexpress.com/item/10-1000pcs-WS2812B-4pins-5050-SMD-Black-White-version-WS2812-Individually-Addressable-Digital-RGB-LED-Chip/" H 6300 3500 60  0001 C CNN "Supplier 1 Part No"
+F 9 "https://www.aliexpress.com/item/10-1000pcs-WS2812B-4pins-5050-SMD-Black-White-version-WS2812-Individually-Addressable-Digital-RGB-LED-Chip/32453497583.html" H 6300 3500 60  0001 C CNN "Supplier 1 Part No"
 F 10 "0.10" H 6300 3500 60  0001 C CNN "Supplier 1 Cost"
 F 11 "~" H 6300 3500 60  0001 C CNN "Supplier 2"
 F 12 "~" H 6300 3500 60  0001 C CNN "Supplier 2 Part No"
@@ -1346,4 +1346,16 @@ F 13 "~" H 10400 2900 60  0001 C CNN "Supplier 2 Cost"
 	1    10400 2900
 	-1   0    0    1   
 $EndComp
+$Comp
+L CONN_01X01 P12
+U 1 1 598DB6BF
+P 9800 1750
+F 0 "P12" H 9800 1850 50  0000 C CNN
+F 1 "KNOB" V 9900 1750 50  0000 C CNN
+F 2 "CuriousElectric3:CEC_Globe_10mm_FCU" H 9800 1750 50  0001 C CNN
+F 3 "" H 9800 1750 50  0000 C CNN
+	1    9800 1750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9600 1750
 $EndSCHEMATC

@@ -182,7 +182,7 @@ F 3 "" H 10600 3250 50  0000 C CNN
 	1    10600 3250
 	1    0    0    -1  
 $EndComp
-Text HLabel 4250 3250 0    60   Input ~ 0
+Text HLabel 3100 3250 0    60   Input ~ 0
 LED_WS2811
 $Comp
 L GND #PWR04
@@ -205,11 +205,11 @@ Text HLabel 10750 1250 1    60   Input ~ 0
 SW_ENC
 Wire Wire Line
 	4350 2600 4550 2600
-Text HLabel 5400 6000 2    60   Input ~ 0
+Text HLabel 5400 5150 2    60   Input ~ 0
 LED_WS2811
 Text HLabel 5400 5700 2    60   Input ~ 0
 SDA
-Text HLabel 5400 5850 2    60   Input ~ 0
+Text HLabel 5400 5300 2    60   Input ~ 0
 SCL
 $Comp
 L +3.3V #PWR05
@@ -252,7 +252,7 @@ Text HLabel 7250 1300 0    60   Input ~ 0
 SDA
 Text HLabel 7250 1400 0    60   Input ~ 0
 SCL
-Text HLabel 5400 5150 2    60   Input ~ 0
+Text HLabel 5400 4850 2    60   Input ~ 0
 SOFT_Tx
 Text HLabel 5400 5000 2    60   Input ~ 0
 SOFT_Rx
@@ -514,8 +514,6 @@ Wire Wire Line
 	4850 5400 4650 5400
 Wire Wire Line
 	4650 5400 4650 5300
-Wire Wire Line
-	4450 5300 5400 5300
 Wire Wire Line
 	4850 5500 4600 5500
 Wire Wire Line
@@ -849,9 +847,9 @@ F 13 "~" H 10450 1750 60  0001 C CNN "Supplier 2 Cost"
 	1    10450 1750
 	1    0    0    -1  
 $EndComp
-Text HLabel 5400 5300 2    60   Input ~ 0
+Text HLabel 5400 6000 2    60   Input ~ 0
 ENC_A
-Text HLabel 5400 4850 2    60   Input ~ 0
+Text HLabel 5400 5850 2    60   Input ~ 0
 ENC_B
 Text HLabel 5400 6150 2    60   Input ~ 0
 SW_ENC
@@ -871,7 +869,7 @@ Wire Wire Line
 Wire Wire Line
 	10750 1550 10750 1250
 Wire Wire Line
-	4250 3250 4750 3250
+	3100 3250 4750 3250
 Wire Wire Line
 	6000 3600 5850 3600
 Wire Wire Line
@@ -1113,8 +1111,18 @@ U 1 1 598AD6D5
 P 6700 6250
 F 0 "P9" H 6700 6350 50  0000 C CNN
 F 1 "HARDWARE" V 6800 6250 50  0000 C CNN
-F 2 "CuriousElectric3:CEC_Globe_10mm_FCU" H 6700 6250 50  0001 C CNN
+F 2 "" H 6700 6250 50  0001 C CNN
 F 3 "" H 6700 6250 50  0000 C CNN
+F 4 "~" H 6700 6250 60  0000 C CNN "Notes"
+F 5 "~" H 6700 6250 60  0001 C CNN "Description"
+F 6 "~" H 6700 6250 60  0001 C CNN "Manufacturer"
+F 7 "~" H 6700 6250 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 6700 6250 60  0001 C CNN "Supplier 1"
+F 9 "~" H 6700 6250 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 6700 6250 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 6700 6250 60  0001 C CNN "Supplier 2"
+F 12 "~" H 6700 6250 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 6700 6250 60  0001 C CNN "Supplier 2 Cost"
 	1    6700 6250
 	1    0    0    -1  
 $EndComp
@@ -1352,10 +1360,34 @@ U 1 1 598DB6BF
 P 9800 1750
 F 0 "P12" H 9800 1850 50  0000 C CNN
 F 1 "KNOB" V 9900 1750 50  0000 C CNN
-F 2 "CuriousElectric3:CEC_Globe_10mm_FCU" H 9800 1750 50  0001 C CNN
+F 2 "" H 9800 1750 50  0001 C CNN
 F 3 "" H 9800 1750 50  0000 C CNN
+F 4 "~" H 9800 1750 60  0000 C CNN "Notes"
+F 5 "~" H 9800 1750 60  0001 C CNN "Description"
+F 6 "~" H 9800 1750 60  0001 C CNN "Manufacturer"
+F 7 "~" H 9800 1750 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 9800 1750 60  0001 C CNN "Supplier 1"
+F 9 "~" H 9800 1750 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 9800 1750 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 9800 1750 60  0001 C CNN "Supplier 2"
+F 12 "~" H 9800 1750 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 9800 1750 60  0001 C CNN "Supplier 2 Cost"
 	1    9800 1750
 	1    0    0    -1  
 $EndComp
 NoConn ~ 9600 1750
+Wire Wire Line
+	4450 5300 5400 5300
+$Comp
+L CONN_01X01 P13
+U 1 1 59AE9868
+P 6700 5250
+F 0 "P13" H 6700 5350 50  0000 C CNN
+F 1 "LOGO_CHEESE" V 6800 5250 50  0000 C CNN
+F 2 "CuriousElectric3:CheeseWedge8mm" H 6700 5250 50  0001 C CNN
+F 3 "" H 6700 5250 50  0000 C CNN
+	1    6700 5250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6500 5250
 $EndSCHEMATC

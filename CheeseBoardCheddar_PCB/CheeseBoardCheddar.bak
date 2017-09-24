@@ -29,7 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:matts_components
-LIBS:ESP_WiFi_Display-cache
+LIBS:CheeseBoardCheddar-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1065,9 +1065,9 @@ F 7 "47642-0001" H 1750 1200 60  0001 C CNN "Manufacturer Part No"
 F 8 "RS" H 1750 1200 60  0001 C CNN "Supplier 1"
 F 9 "896-7419" H 1750 1200 60  0001 C CNN "Supplier 1 Part No"
 F 10 "0.60" H 1750 1200 60  0001 C CNN "Supplier 1 Cost"
-F 11 "~" H 1750 1200 60  0001 C CNN "Supplier 2"
-F 12 "~" H 1750 1200 60  0001 C CNN "Supplier 2 Part No"
-F 13 "~" H 1750 1200 60  0001 C CNN "Supplier 2 Cost"
+F 11 "Farnell" H 1750 1200 60  0001 C CNN "Supplier 2"
+F 12 "2396171" H 1750 1200 60  0001 C CNN "Supplier 2 Part No"
+F 13 "0.474" H 1750 1200 60  0001 C CNN "Supplier 2 Cost"
 	1    1750 1200
 	0    -1   -1   0   
 $EndComp
@@ -1111,8 +1111,18 @@ U 1 1 598AD6D5
 P 6700 6250
 F 0 "P9" H 6700 6350 50  0000 C CNN
 F 1 "HARDWARE" V 6800 6250 50  0000 C CNN
-F 2 "CuriousElectric3:CEC_Globe_10mm_FCU" H 6700 6250 50  0001 C CNN
+F 2 "" H 6700 6250 50  0001 C CNN
 F 3 "" H 6700 6250 50  0000 C CNN
+F 4 "~" H 6700 6250 60  0000 C CNN "Notes"
+F 5 "~" H 6700 6250 60  0001 C CNN "Description"
+F 6 "~" H 6700 6250 60  0001 C CNN "Manufacturer"
+F 7 "~" H 6700 6250 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 6700 6250 60  0001 C CNN "Supplier 1"
+F 9 "~" H 6700 6250 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 6700 6250 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 6700 6250 60  0001 C CNN "Supplier 2"
+F 12 "~" H 6700 6250 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 6700 6250 60  0001 C CNN "Supplier 2 Cost"
 	1    6700 6250
 	1    0    0    -1  
 $EndComp
@@ -1350,8 +1360,18 @@ U 1 1 598DB6BF
 P 9800 1750
 F 0 "P12" H 9800 1850 50  0000 C CNN
 F 1 "KNOB" V 9900 1750 50  0000 C CNN
-F 2 "CuriousElectric3:CEC_Globe_10mm_FCU" H 9800 1750 50  0001 C CNN
+F 2 "" H 9800 1750 50  0001 C CNN
 F 3 "" H 9800 1750 50  0000 C CNN
+F 4 "~" H 9800 1750 60  0000 C CNN "Notes"
+F 5 "~" H 9800 1750 60  0001 C CNN "Description"
+F 6 "~" H 9800 1750 60  0001 C CNN "Manufacturer"
+F 7 "~" H 9800 1750 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 9800 1750 60  0001 C CNN "Supplier 1"
+F 9 "~" H 9800 1750 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 9800 1750 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 9800 1750 60  0001 C CNN "Supplier 2"
+F 12 "~" H 9800 1750 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 9800 1750 60  0001 C CNN "Supplier 2 Cost"
 	1    9800 1750
 	1    0    0    -1  
 $EndComp

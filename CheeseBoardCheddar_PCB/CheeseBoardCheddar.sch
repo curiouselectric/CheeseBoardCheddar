@@ -28,8 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:matts_components
-LIBS:ESP_WiFi_Display-cache
+LIBS:CheeseBoardCheddar-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -68,22 +67,22 @@ $EndComp
 $Comp
 L OLED_I2C DISP1
 U 1 1 5946ECA2
-P 7900 2000
-F 0 "DISP1" H 8300 3000 60  0000 C CNN
-F 1 "OLED_I2C" H 8300 2250 60  0000 C CNN
-F 2 "REInnovationFootprint:TH_OLED1306" H 9300 2350 60  0001 C CNN
-F 3 "" H 9300 2350 60  0000 C CNN
-F 4 "~" H 7900 2000 60  0000 C CNN "Notes"
-F 5 "OLED display 128x64 IIC" H 7900 2000 60  0001 C CNN "Description"
-F 6 "~" H 7900 2000 60  0001 C CNN "Manufacturer"
-F 7 "~" H 7900 2000 60  0001 C CNN "Manufacturer Part No"
-F 8 "Aliexpress" H 7900 2000 60  0001 C CNN "Supplier 1"
-F 9 "https://www.aliexpress.com/item/Free-Shipping-10pcs-2015-white-New-128X64-OLED-LCD-LED-Display-Module-0-96-I2C-IIC/32311828903.html" H 7900 2000 60  0001 C CNN "Supplier 1 Part No"
-F 10 "2.75" H 7900 2000 60  0001 C CNN "Supplier 1 Cost"
-F 11 "~" H 7900 2000 60  0001 C CNN "Supplier 2"
-F 12 "~" H 7900 2000 60  0001 C CNN "Supplier 2 Part No"
-F 13 "~" H 7900 2000 60  0001 C CNN "Supplier 2 Cost"
-	1    7900 2000
+P 7300 2050
+F 0 "DISP1" H 7700 3050 60  0000 C CNN
+F 1 "OLED_I2C" H 7700 2300 60  0000 C CNN
+F 2 "REInnovationFootprint:TH_OLED1306" H 8700 2400 60  0001 C CNN
+F 3 "" H 8700 2400 60  0000 C CNN
+F 4 "~" H 7300 2050 60  0000 C CNN "Notes"
+F 5 "OLED display 128x64 IIC" H 7300 2050 60  0001 C CNN "Description"
+F 6 "~" H 7300 2050 60  0001 C CNN "Manufacturer"
+F 7 "~" H 7300 2050 60  0001 C CNN "Manufacturer Part No"
+F 8 "Aliexpress" H 7300 2050 60  0001 C CNN "Supplier 1"
+F 9 "https://www.aliexpress.com/item/Free-Shipping-10pcs-2015-white-New-128X64-OLED-LCD-LED-Display-Module-0-96-I2C-IIC/32311828903.html" H 7300 2050 60  0001 C CNN "Supplier 1 Part No"
+F 10 "2.75" H 7300 2050 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 7300 2050 60  0001 C CNN "Supplier 2"
+F 12 "~" H 7300 2050 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 7300 2050 60  0001 C CNN "Supplier 2 Cost"
+	1    7300 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -152,23 +151,23 @@ $EndComp
 $Comp
 L GND #PWR01
 U 1 1 5946FF27
-P 7300 1700
-F 0 "#PWR01" H 7300 1450 50  0001 C CNN
-F 1 "GND" H 7300 1550 50  0000 C CNN
-F 2 "" H 7300 1700 50  0000 C CNN
-F 3 "" H 7300 1700 50  0000 C CNN
-	1    7300 1700
+P 6700 1750
+F 0 "#PWR01" H 6700 1500 50  0001 C CNN
+F 1 "GND" H 6700 1600 50  0000 C CNN
+F 2 "" H 6700 1750 50  0000 C CNN
+F 3 "" H 6700 1750 50  0000 C CNN
+	1    6700 1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L +3.3V #PWR02
 U 1 1 5946FF6D
-P 6850 1500
-F 0 "#PWR02" H 6850 1350 50  0001 C CNN
-F 1 "+3.3V" H 6850 1640 50  0000 C CNN
-F 2 "" H 6850 1500 50  0000 C CNN
-F 3 "" H 6850 1500 50  0000 C CNN
-	1    6850 1500
+P 6250 1550
+F 0 "#PWR02" H 6250 1400 50  0001 C CNN
+F 1 "+3.3V" H 6250 1690 50  0000 C CNN
+F 2 "" H 6250 1550 50  0000 C CNN
+F 3 "" H 6250 1550 50  0000 C CNN
+	1    6250 1550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -201,7 +200,7 @@ Wire Wire Line
 	5400 2600 5550 2600
 Wire Wire Line
 	5000 2600 4850 2600
-Text HLabel 10750 1250 1    60   Input ~ 0
+Text HLabel 10250 1050 1    60   Input ~ 0
 SW_ENC
 Wire Wire Line
 	4350 2600 4550 2600
@@ -236,36 +235,36 @@ $EndComp
 $Comp
 L GND #PWR07
 U 1 1 59471AB1
-P 10450 2400
-F 0 "#PWR07" H 10450 2150 50  0001 C CNN
-F 1 "GND" H 10450 2250 50  0000 C CNN
-F 2 "" H 10450 2400 50  0000 C CNN
-F 3 "" H 10450 2400 50  0000 C CNN
-	1    10450 2400
+P 9750 2050
+F 0 "#PWR07" H 9750 1800 50  0001 C CNN
+F 1 "GND" H 9750 1900 50  0000 C CNN
+F 2 "" H 9750 2050 50  0000 C CNN
+F 3 "" H 9750 2050 50  0000 C CNN
+	1    9750 2050
 	1    0    0    -1  
 $EndComp
-Text HLabel 10250 1250 1    60   Input ~ 0
+Text HLabel 9750 1050 1    60   Input ~ 0
 ENC_A
-Text HLabel 10450 1250 1    60   Input ~ 0
+Text HLabel 9950 1050 1    60   Input ~ 0
 ENC_B
-Text HLabel 7250 1300 0    60   Input ~ 0
+Text HLabel 6650 1350 0    60   Input ~ 0
 SDA
-Text HLabel 7250 1400 0    60   Input ~ 0
+Text HLabel 6650 1450 0    60   Input ~ 0
 SCL
 Text HLabel 5400 4850 2    60   Input ~ 0
 SOFT_Tx
 Text HLabel 5400 5000 2    60   Input ~ 0
 SOFT_Rx
 Wire Wire Line
-	7550 1500 6850 1500
+	6950 1550 6250 1550
 Wire Wire Line
-	7300 1700 7300 1600
+	6700 1750 6700 1650
 Wire Wire Line
-	7300 1600 7550 1600
+	6700 1650 6950 1650
 Wire Wire Line
-	7250 1400 7550 1400
+	6650 1450 6950 1450
 Wire Wire Line
-	7250 1300 7550 1300
+	6650 1350 6950 1350
 Wire Wire Line
 	8700 5550 8200 5550
 Wire Wire Line
@@ -829,22 +828,22 @@ Wire Wire Line
 $Comp
 L Encoder_1 ENC1
 U 1 1 59833A57
-P 10450 1750
-F 0 "ENC1" H 10450 2100 60  0000 C CNN
-F 1 "Encoder" H 10550 1400 60  0000 C CNN
-F 2 "REInnovationFootprint:TH_Encoder" H 10450 1750 60  0001 C CNN
-F 3 "" H 10450 1750 60  0000 C CNN
-F 4 "~" H 10450 1750 60  0000 C CNN "Notes"
-F 5 "Rotary encoder" H 10450 1750 60  0001 C CNN "Description"
-F 6 "~" H 10450 1750 60  0001 C CNN "Manufacturer"
-F 7 "~" H 10450 1750 60  0001 C CNN "Manufacturer Part No"
-F 8 "Aliexpress" H 10450 1750 60  0001 C CNN "Supplier 1"
-F 9 "https://www.aliexpress.com/item/Wholesale-20pcs-lot-12mm-Rotary-Encoder-Switch-W-Keyswitch-HQ-New-free-shipping-10000002/495026832.html" H 10450 1750 60  0001 C CNN "Supplier 1 Part No"
-F 10 "0.50" H 10450 1750 60  0001 C CNN "Supplier 1 Cost"
-F 11 "~" H 10450 1750 60  0001 C CNN "Supplier 2"
-F 12 "~" H 10450 1750 60  0001 C CNN "Supplier 2 Part No"
-F 13 "~" H 10450 1750 60  0001 C CNN "Supplier 2 Cost"
-	1    10450 1750
+P 9950 1550
+F 0 "ENC1" H 9950 1900 60  0000 C CNN
+F 1 "Encoder" H 10050 1200 60  0000 C CNN
+F 2 "REInnovationFootprint:TH_Encoder" H 9950 1550 60  0001 C CNN
+F 3 "" H 9950 1550 60  0000 C CNN
+F 4 "~" H 9950 1550 60  0000 C CNN "Notes"
+F 5 "Rotary encoder" H 9950 1550 60  0001 C CNN "Description"
+F 6 "~" H 9950 1550 60  0001 C CNN "Manufacturer"
+F 7 "~" H 9950 1550 60  0001 C CNN "Manufacturer Part No"
+F 8 "Aliexpress" H 9950 1550 60  0001 C CNN "Supplier 1"
+F 9 "https://www.aliexpress.com/item/Wholesale-20pcs-lot-12mm-Rotary-Encoder-Switch-W-Keyswitch-HQ-New-free-shipping-10000002/495026832.html" H 9950 1550 60  0001 C CNN "Supplier 1 Part No"
+F 10 "0.50" H 9950 1550 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 9950 1550 60  0001 C CNN "Supplier 2"
+F 12 "~" H 9950 1550 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 9950 1550 60  0001 C CNN "Supplier 2 Cost"
+	1    9950 1550
 	1    0    0    -1  
 $EndComp
 Text HLabel 5400 6000 2    60   Input ~ 0
@@ -854,20 +853,13 @@ ENC_B
 Text HLabel 5400 6150 2    60   Input ~ 0
 SW_ENC
 Wire Wire Line
-	10250 1950 10250 2250
+	9750 1750 9750 2050
 Wire Wire Line
-	10250 2250 10750 2250
+	9750 1350 9750 1050
 Wire Wire Line
-	10750 2250 10750 1950
+	9950 1350 9950 1050
 Wire Wire Line
-	10450 2400 10450 2250
-Connection ~ 10450 2250
-Wire Wire Line
-	10250 1550 10250 1250
-Wire Wire Line
-	10450 1550 10450 1250
-Wire Wire Line
-	10750 1550 10750 1250
+	10250 1350 10250 1050
 Wire Wire Line
 	3100 3250 4750 3250
 Wire Wire Line
@@ -1065,9 +1057,9 @@ F 7 "47642-0001" H 1750 1200 60  0001 C CNN "Manufacturer Part No"
 F 8 "RS" H 1750 1200 60  0001 C CNN "Supplier 1"
 F 9 "896-7419" H 1750 1200 60  0001 C CNN "Supplier 1 Part No"
 F 10 "0.60" H 1750 1200 60  0001 C CNN "Supplier 1 Cost"
-F 11 "~" H 1750 1200 60  0001 C CNN "Supplier 2"
-F 12 "~" H 1750 1200 60  0001 C CNN "Supplier 2 Part No"
-F 13 "~" H 1750 1200 60  0001 C CNN "Supplier 2 Cost"
+F 11 "Farnell" H 1750 1200 60  0001 C CNN "Supplier 2"
+F 12 "2396171" H 1750 1200 60  0001 C CNN "Supplier 2 Part No"
+F 13 "0.474" H 1750 1200 60  0001 C CNN "Supplier 2 Cost"
 	1    1750 1200
 	0    -1   -1   0   
 $EndComp
@@ -1130,15 +1122,15 @@ NoConn ~ 6500 6250
 $Comp
 L CONN_01X01 P8
 U 1 1 598AD73D
-P 6700 5800
-F 0 "P8" H 6700 5900 50  0000 C CNN
-F 1 "LOGO_MOUSE" V 6800 5800 50  0000 C CNN
-F 2 "CuriousElectric3:mouse10x10" H 6700 5800 50  0001 C CNN
-F 3 "" H 6700 5800 50  0000 C CNN
-	1    6700 5800
+P 6700 5650
+F 0 "P8" H 6700 5750 50  0000 C CNN
+F 1 "LOGO_MOUSE" V 6800 5650 50  0000 C CNN
+F 2 "CuriousElectric3:mouse10x10" H 6700 5650 50  0001 C CNN
+F 3 "" H 6700 5650 50  0000 C CNN
+	1    6700 5650
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6500 5800
+NoConn ~ 6500 5650
 $Comp
 L WS2812B_SMD D3
 U 1 1 598B06A3
@@ -1357,37 +1349,54 @@ $EndComp
 $Comp
 L CONN_01X01 P12
 U 1 1 598DB6BF
-P 9800 1750
-F 0 "P12" H 9800 1850 50  0000 C CNN
-F 1 "KNOB" V 9900 1750 50  0000 C CNN
-F 2 "" H 9800 1750 50  0001 C CNN
-F 3 "" H 9800 1750 50  0000 C CNN
-F 4 "~" H 9800 1750 60  0000 C CNN "Notes"
-F 5 "~" H 9800 1750 60  0001 C CNN "Description"
-F 6 "~" H 9800 1750 60  0001 C CNN "Manufacturer"
-F 7 "~" H 9800 1750 60  0001 C CNN "Manufacturer Part No"
-F 8 "~" H 9800 1750 60  0001 C CNN "Supplier 1"
-F 9 "~" H 9800 1750 60  0001 C CNN "Supplier 1 Part No"
-F 10 "~" H 9800 1750 60  0001 C CNN "Supplier 1 Cost"
-F 11 "~" H 9800 1750 60  0001 C CNN "Supplier 2"
-F 12 "~" H 9800 1750 60  0001 C CNN "Supplier 2 Part No"
-F 13 "~" H 9800 1750 60  0001 C CNN "Supplier 2 Cost"
-	1    9800 1750
+P 9100 1600
+F 0 "P12" H 9100 1700 50  0000 C CNN
+F 1 "KNOB" V 9200 1600 50  0000 C CNN
+F 2 "" H 9100 1600 50  0001 C CNN
+F 3 "" H 9100 1600 50  0000 C CNN
+F 4 "~" H 9100 1600 60  0000 C CNN "Notes"
+F 5 "~" H 9100 1600 60  0001 C CNN "Description"
+F 6 "~" H 9100 1600 60  0001 C CNN "Manufacturer"
+F 7 "~" H 9100 1600 60  0001 C CNN "Manufacturer Part No"
+F 8 "~" H 9100 1600 60  0001 C CNN "Supplier 1"
+F 9 "~" H 9100 1600 60  0001 C CNN "Supplier 1 Part No"
+F 10 "~" H 9100 1600 60  0001 C CNN "Supplier 1 Cost"
+F 11 "~" H 9100 1600 60  0001 C CNN "Supplier 2"
+F 12 "~" H 9100 1600 60  0001 C CNN "Supplier 2 Part No"
+F 13 "~" H 9100 1600 60  0001 C CNN "Supplier 2 Cost"
+	1    9100 1600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 9600 1750
+NoConn ~ 8900 1600
 Wire Wire Line
 	4450 5300 5400 5300
 $Comp
 L CONN_01X01 P13
 U 1 1 59AE9868
-P 6700 5250
-F 0 "P13" H 6700 5350 50  0000 C CNN
-F 1 "LOGO_CHEESE" V 6800 5250 50  0000 C CNN
-F 2 "CuriousElectric3:CheeseWedge8mm" H 6700 5250 50  0001 C CNN
-F 3 "" H 6700 5250 50  0000 C CNN
-	1    6700 5250
+P 6700 5050
+F 0 "P13" H 6700 5150 50  0000 C CNN
+F 1 "LOGO_CHEESE" V 6800 5050 50  0000 C CNN
+F 2 "CuriousElectric3:CheeseWedge8mm" H 6700 5050 50  0001 C CNN
+F 3 "" H 6700 5050 50  0000 C CNN
+	1    6700 5050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6500 5250
+NoConn ~ 6500 5050
+$Comp
+L +3.3V #PWR?
+U 1 1 59C7D210
+P 10500 1850
+F 0 "#PWR?" H 10500 1700 50  0001 C CNN
+F 1 "+3.3V" H 10500 1990 50  0000 C CNN
+F 2 "" H 10500 1850 50  0000 C CNN
+F 3 "" H 10500 1850 50  0000 C CNN
+	1    10500 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 1750 10250 1950
+Wire Wire Line
+	10250 1950 10500 1950
+Wire Wire Line
+	10500 1950 10500 1850
 $EndSCHEMATC

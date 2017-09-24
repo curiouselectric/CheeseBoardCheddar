@@ -12,7 +12,7 @@ This repository contains the design files, software and hardward files for this 
 
 We can supply this project in kit form from [The Curious Electric Company](https://www.curiouselectric.co.uk/) and Tindie.
 
-## Hardware Overview
+## PCB Overview
 
 It is based upon the NodeMCU Amica ESP8266 module which is low-cost, easy to find and has all regulation and protection required.
 
@@ -53,6 +53,15 @@ Hardware for the enclosure is also provided here.
 
 ## Software Overview
 
-This project has been designed with some interesting software to get you up and running.
+This project has been designed with some interesting software to get you up and running. We wanted this project to do something useful or fun straight away. But it has been designed for hacking and for you to change, alter, adjust and play as you need.
+
+## Hardware Overview
+
+This kit comes with a simple enclosure to house the electronics.
+
+This has been designed to be laser cut in 3mm acrylic. The design files are within this repository, if you would like to make your own or alter the design at all.
+
+
+
 
 

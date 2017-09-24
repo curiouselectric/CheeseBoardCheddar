@@ -62,6 +62,14 @@ This kit comes with a simple enclosure to house the electronics.
 This has been designed to be laser cut in 3mm acrylic. The design files are within this repository, if you would like to make your own or alter the design at all.
 
 
+# To Do
 
+* Do initial hardware enclosure design
+* Order parts for multiple kits
+* Update PCB with D8 chnage - Done ML 24/9/17
+* Do insructions for building kit
+* Put kit up for sale
+* Do software for basic wifi scanner
+* Do Software for ThingSpeak client
 
 

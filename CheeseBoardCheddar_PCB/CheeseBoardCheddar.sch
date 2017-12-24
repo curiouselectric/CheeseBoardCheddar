@@ -28,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:matts_components
 LIBS:CheeseBoardCheddar-cache
 EELAYER 25 0
 EELAYER END
@@ -1401,17 +1400,6 @@ Wire Wire Line
 Wire Wire Line
 	10500 1950 10500 1850
 $Comp
-L CONN_01X04 P14
-U 1 1 5A22E883
-P 9450 4600
-F 0 "P14" H 9450 4850 50  0000 C CNN
-F 1 "I2C_EXT" V 9550 4600 50  0000 C CNN
-F 2 "REInnovationFootprint:SIL-4_large_pad" H 9450 4600 50  0001 C CNN
-F 3 "" H 9450 4600 50  0000 C CNN
-	1    9450 4600
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR021
 U 1 1 5A22F1EB
 P 9000 4850
@@ -1438,4 +1426,30 @@ Wire Wire Line
 	8950 4450 9250 4450
 Text HLabel 8550 4650 0    60   Input ~ 0
 5V_PWR
+$Comp
+L CONN_01X05 P14
+U 1 1 5A29A719
+P 9450 4550
+F 0 "P14" H 9450 4850 50  0000 C CNN
+F 1 "I2C_EXT" V 9550 4550 50  0000 C CNN
+F 2 "matts_components:SIL-5_large_pads_marker" H 9450 4550 50  0001 C CNN
+F 3 "" H 9450 4550 50  0000 C CNN
+	1    9450 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR022
+U 1 1 5A29A923
+P 9050 4300
+F 0 "#PWR022" H 9050 4150 50  0001 C CNN
+F 1 "+3.3V" H 9050 4440 50  0000 C CNN
+F 2 "" H 9050 4300 50  0000 C CNN
+F 3 "" H 9050 4300 50  0000 C CNN
+	1    9050 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 4350 9050 4350
+Wire Wire Line
+	9050 4350 9050 4300
 $EndSCHEMATC

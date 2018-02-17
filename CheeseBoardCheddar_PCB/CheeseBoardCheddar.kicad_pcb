@@ -3,7 +3,7 @@
   (general
     (links 100)
     (no_connects 3)
-    (area 0 0 0 0)
+    (area 88.232999 36.882999 141.284571 137.537)
     (thickness 1.6)
     (drawings 55)
     (tracks 409)
@@ -88,7 +88,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory GERBER/))
+      (outputdirectory GERBER/front_silkscreen))
   )
 
   (net 0 "")

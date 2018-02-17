@@ -1,4 +1,4 @@
-update=30/11/2017 17:30:18
+update=20/01/2018 19:06:06
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,7 +62,7 @@ LibName30=E:/Google Drive/KiCAD/kicad_reinnovation/KiCad My Libraries/matts_comp
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=../CheeseBoardCheddar_Instructions/cheese_board_schematic
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew

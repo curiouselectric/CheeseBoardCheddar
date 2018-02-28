@@ -1,5 +1,6 @@
 # Cheese Board - Cheddar
 
+
 This is an ESP8266 breakout board with small display, user inputs and WS2812 LEDs. 
 
 This is designed as a low cost platform to quickly get started with projects with the ESP8266. We wanted to design something that got you up and running with your project idea quickly and easily.
@@ -11,6 +12,14 @@ This can be programmed via the Arduino IDE (or your favourite IDE).
 This repository contains the design files, software and hardward files for this project.
 
 We can supply this project in kit form from [The Curious Electric Company](https://www.curiouselectric.co.uk/) and Tindie.
+
+This repository is for the hardware and instructions only. The software is available here:
+
+https://github.com/curiouselectric/CheeseBoard_Software
+
+## Instructions
+
+The instructions are available in this folder as a .pdf
 
 ## PCB Overview
 
@@ -64,12 +73,5 @@ This has been designed to be laser cut in 3mm acrylic. The design files are with
 
 # To Do
 
-* Do initial hardware enclosure design
-* Order parts for multiple kits
-* Update PCB with D8 chnage - Done ML 24/9/17
-* Do insructions for building kit
-* Put kit up for sale
-* Do software for basic wifi scanner
-* Do Software for ThingSpeak client
-
-
+* Check software in many applications
+* Update instructions as required

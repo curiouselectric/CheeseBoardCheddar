@@ -44,20 +44,20 @@ Hardware for the enclosure is also provided here.
 
 ### Pin Connections:
 
-| Node MCU Conenction | Pin Number     |Function          |
-|---------------------|----------------|------------------|
-| D0                  | 30             | HC-12 SET pin    |
-| D1                  | 29             | Soft Serial Tx   |
-| D2                  | 28             | Soft Serial Rx   |
-| D3                  | 27             | LED WS2812       |
-| D4                  | 26             | I2C SCLK         |
-| D5                  | 23             | I2C SDA          |
-| D6                  | 22             | Enocder B        |
-| D7                  | 21             | Enocder A        |
-| D8                  | 20             | Encoder Switch   |
-| D9                  | 19             | H/W Serial Rx    |
-| D9                  | 19             | H/W Serial Tx    |
-| A0                  | 1              | N/C              |
+| Node MCU Conenction | Pin Number     |Function          | Arduino Alias   |
+|---------------------|----------------|------------------|-----------------|
+| D0                  | 30             | HC-12 SET pin    | 16              |
+| D1                  | 29             | Soft Serial Tx   | 5               |
+| D2                  | 28             | Soft Serial Rx   | 4               |
+| D3                  | 27             | LED WS2812       | 0               |
+| D4                  | 26             | I2C SCLK         | 2               |
+| D5                  | 23             | I2C SDA          | 14              |
+| D6                  | 22             | Enocder B        | 12              |
+| D7                  | 21             | Enocder A        | 13              |
+| D8                  | 20             | Encoder Switch   | 15              |
+| D9                  | 19             | H/W Serial Rx    | 3               |
+| D10                 | 18             | H/W Serial Tx    | 1               |
+| A0                  | 1              | N/C              | A0              |
 
 
 ## Software Overview
